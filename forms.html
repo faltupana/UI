@@ -1,0 +1,28 @@
+<html>
+    <body >
+        <h2>A simple form</h2>
+        <form name="userForm" action="Chess.html" method="POST" onsubmit="return checkForm()">
+            <label>Enter Username</label>
+            <input type="text" name="un"><span id="unError" style="color:red"></span><br/>
+            <label>Enter Password</label>
+            <input type="password" name="pw"><span id="pwError" style="color:red"></span><br/>
+            <label>select Gender</label><input type="radio" name="g" value="M">Male</input>
+            <input type="radio" name="g" value="F">Female</input> <span id="gError" style="color:red"></span><br/>
+            <label>Select Courses</label>
+            <input type="checkbox" name="course" value="J">Java</input>
+            <input type="checkbox" name="course" value="P">Python</input>
+            <input type="checkbox" name="course" value="A">Angular</input><span id="courseError" style="color:red"></span><br/>
+            <label>Qualification</label>
+            <select name="q">
+                <option value="SELECT">SELECT</option>
+                <option value="BE">B.E.</option>
+                <option value="MTech">MTech</option>
+                <option value="MS">M.S.</option>
+            </select><span id="qualError" style="color:red"></span><br/>
+
+            <input type="submit" value="register">
+        </form>
+        
+    </body>
+    <script type="text/javascript" src="scripts/form.js"></script
+</html>

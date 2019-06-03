@@ -1,0 +1,18 @@
+<html>
+    <head>
+            <link type="text/css" rel="stylesheet" href="mystyles.css">
+    </head>
+    <body onload="loadImages()">
+        <script src="changeImage.js" type="text/javascript"></script>
+        <div  >
+            <img id="mainImage" src="1.jpg" alt="current image" width="200" height="300">
+        </div>
+        <div onclick="changeImage(event)" id="thumbnailContainer" >
+           <!---- <img src="1.jpg" class="thumbnail">
+            <img src="2.jpg" class="thumbnail">
+            <img src="3.jpg" class="thumbnail">
+            <img src="4.jpg" class="thumbnail"> -->
+        </div>
+        <button value="Next" onclick="changeImageOnNext()">Next</button>
+    </body>
+</html>

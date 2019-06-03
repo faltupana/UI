@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+<canvas id="c1" style="border:2px solid black" width="400" height="400">
+    
+</canvas>
+<canvas id="c2" style="border:2px solid black" width="400" height="400"></canvas>
+<script>
+    var c=document.getElementById("c1");
+    var ctx=c.getContext("2d");
+    for(var x=0;x<8;x++){
+        for(var y=0;y<8;y++){
+            if((x+y)%2==0){
+                ctx.fillRect(x*50,y*50,50,50);
+            }
+        }
+    }
+    var c2=document.getElementById("c2");
+    var ctx2=c2.getContext("2d");
+    var colors=["violet","indigo","blue","green","yellow","orange","red","white"];
+    var r=200;
+    for(var i=0;i<colors.length;i++){
+        ctx2.beginPath();
+        ctx2.fillStyle=colors[i];
+        ctx2.arc(200,200,r,Math.PI,Math.PI*2);
+        r=r-20;
+        ctx2.fill();
+    }
+</script>
+    </body>
+</html>
